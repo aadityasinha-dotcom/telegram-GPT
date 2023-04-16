@@ -2,13 +2,15 @@ from telegram import *
 from telegram.ext import *
 import logging
 import random
+import os
+from dotenv import load_dotenv
 
 from werkzeug.wrappers import response
 from copilot import Copilot
 
-
-TOKEN = ''
-API_KEY = ''
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
+API_KEY = os.getenv("API_KEY")
 
 # Enable logging
 

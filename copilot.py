@@ -1,8 +1,10 @@
 import os
 import json
+from dotenv import load_dotenv
 import openai
 
-TOKEN = ''
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 
 class Copilot:
 
